@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Birat Kiju's personal website showcasing his skills, services, and portfolio.">
+    <title>Birat Kiju</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="scriptsheet" href="script.js" type="text/js">  
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Birat<span>Kiju</span></h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="#abt">Profile</a></li>           
+                    <li><a href="#serve">Project</a></li>             
+                    <li><a href="#contact-Me">Contact</a></li> 
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>             
+                </ul>  
+            </nav>          
+            <div class="content">
+                <h4>Hello, my name is</h4>
+                <h1>Birat Kiju</h1><br><br>
+                <h3>
+                    I am a Web Developer. I am an ever-learner who always believes in learning and sharing. 
+                    I enjoy learning new tech stuff, ready to dive into depth if I ever started, and want to explore tech more. 
+                </h3><br><br>
+                <div class="form">
+                    <form>
+                        Email:
+                        <input type="email" name="myemail" id="email" placeholder="Enter Your Email" required>
+                        <input type="submit" name="submit" value="Let's Start">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="about" id="abt">
+            <div class="container">
+                <div class="flex-1">
+                    <img class="about-me-img" src="img/IMG_20230626_192815.jpg" alt="Birat Kiju's Image" />
+                </div>
+                <div class="flex">
+                    <h1><span>About</span> Me</h1>
+                    <h3><span>Hello World!</span>, I am Birat Kiju</h3>
+                    <p>
+                        I am an ever-learner who always believes in learning and sharing. I
+                        enjoy learning new tech stuff and am ready to dive into depth if I
+                        ever start. I also want to explore tech more. Despite working alone, I love collaborating with friends.
+                    </p>
+                    <p>
+                        Currently studying BACHELOR OF INFORMATION MANAGEMENT,
+                        5th semester (running).
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact-Me">
+            <div class="contact-Me">
+                <div class="section-heading">
+                    <center>
+                        <h1><span>Contact Me</span></h1>
+                    </center>
+                </div>
+                <br><br>
+                <form action="index.php" method="POST">
+                    <div class="input-wrap">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Your Name" name="name" required>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Your Email" name="email" required>
+                    </div>
+                    <div class="input-wrap-2">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" placeholder="Your Subject" name="subject" required>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="50" rows="10" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <input type="submit" class="btn-primary" name="send" value="Send Message">
+                    </div>
+                </form>
+            </div>
+            </div>
+        </section>
+
+        <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle("dark-mode")
+            }
+            function toggleDarkMode() {
+                const currentTheme = document.documentElement.getAttribute("data-theme");
+                const targetTheme = currentTheme === "dark" ? "light" : "dark";
+                document.documentElement.setAttribute("data-theme", targetTheme);
+            }
+
+        </script>
+        
+</body>
+</html>
