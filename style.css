@@ -164,7 +164,7 @@ nav ul li a:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -262,7 +262,7 @@ section.about p {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     section.about .container {
         flex-direction: column;
         align-items: center;
@@ -379,7 +379,7 @@ section.contact .btn-primary:hover {
 
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     section.contact .contact-Me {
         padding: 20px;
     }
